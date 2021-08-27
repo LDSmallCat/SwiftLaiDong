@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		553495A017200EEEE9ACEDDE /* Pods_SwiftLaiDong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7AB67371DFDD03E26838E2 /* Pods_SwiftLaiDong.framework */; };
 		D23854ED26C4CBC6003B7999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23854EC26C4CBC6003B7999 /* AppDelegate.swift */; };
 		D23854EF26C4CBC6003B7999 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23854EE26C4CBC6003B7999 /* SceneDelegate.swift */; };
 		D23854F126C4CBC6003B7999 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23854F026C4CBC6003B7999 /* ViewController.swift */; };
@@ -24,10 +25,15 @@
 		D238552726C4EC5E003B7999 /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D238552626C4EC5E003B7999 /* UIBarButtonItemExtension.swift */; };
 		D238552926C4ECDC003B7999 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D238552826C4ECDC003B7999 /* NSObjectExtension.swift */; };
 		D238552B26C4F116003B7999 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D238552A26C4F116003B7999 /* Global.swift */; };
+		D28E65BB26D8AF140040C989 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E65BA26D8AF140040C989 /* LoginViewController.swift */; };
+		D28E65BD26D8AF870040C989 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E65BC26D8AF870040C989 /* BaseUIView.swift */; };
 		D2BEFFB326C525DB00153D54 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BEFFB226C525DB00153D54 /* BoolExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		601F6189CC214B2985A9E2F2 /* Pods-SwiftLaiDong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLaiDong.release.xcconfig"; path = "Target Support Files/Pods-SwiftLaiDong/Pods-SwiftLaiDong.release.xcconfig"; sourceTree = "<group>"; };
+		652B4545393E739194E0970A /* Pods-SwiftLaiDong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLaiDong.debug.xcconfig"; path = "Target Support Files/Pods-SwiftLaiDong/Pods-SwiftLaiDong.debug.xcconfig"; sourceTree = "<group>"; };
+		6B7AB67371DFDD03E26838E2 /* Pods_SwiftLaiDong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLaiDong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23854E926C4CBC6003B7999 /* SwiftLaiDong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLaiDong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23854EC26C4CBC6003B7999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D23854EE26C4CBC6003B7999 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +53,9 @@
 		D238552626C4EC5E003B7999 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		D238552826C4ECDC003B7999 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		D238552A26C4F116003B7999 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		D28E65BA26D8AF140040C989 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D28E65BC26D8AF870040C989 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
+		D28E65C126D8B6990040C989 /* SwiftLaiDong-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftLaiDong-Bridging-Header.h"; sourceTree = "<group>"; };
 		D2BEFFB226C525DB00153D54 /* BoolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,17 +64,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553495A017200EEEE9ACEDDE /* Pods_SwiftLaiDong.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71ECF0BE3852B52EBA14E019 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				652B4545393E739194E0970A /* Pods-SwiftLaiDong.debug.xcconfig */,
+				601F6189CC214B2985A9E2F2 /* Pods-SwiftLaiDong.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D23854E026C4CBC6003B7999 = {
 			isa = PBXGroup;
 			children = (
 				D23854EB26C4CBC6003B7999 /* SwiftLaiDong */,
 				D23854EA26C4CBC6003B7999 /* Products */,
+				71ECF0BE3852B52EBA14E019 /* Pods */,
+				E0BE4A43DB7C520BD4F9FC79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				D23854F526C4CBC7003B7999 /* Assets.xcassets */,
+				D28E65B726D8AEA90040C989 /* Login */,
 				D238550026C4CCE1003B7999 /* Home */,
 				D238550E26C4E503003B7999 /* Find */,
 				D238551226C4E50C003B7999 /* Some */,
@@ -106,8 +129,6 @@
 			children = (
 				D238552126C4E9C9003B7999 /* Extension */,
 				D238552226C4E9C9003B7999 /* Global */,
-				D238552326C4E9C9003B7999 /* V */,
-				D238552026C4E9C9003B7999 /* Some */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -123,9 +144,9 @@
 		D238550326C4CDAB003B7999 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D28E65B926D8AEDF0040C989 /* V */,
+				D28E65B826D8AED80040C989 /* M */,
 				D238550626C4CE68003B7999 /* C */,
-				D238550726C4CE68003B7999 /* M */,
-				D238550526C4CE67003B7999 /* V */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -138,15 +159,9 @@
 				D23854FA26C4CBC7003B7999 /* Info.plist */,
 				D23854EC26C4CBC6003B7999 /* AppDelegate.swift */,
 				D23854EE26C4CBC6003B7999 /* SceneDelegate.swift */,
+				D28E65C126D8B6990040C989 /* SwiftLaiDong-Bridging-Header.h */,
 			);
 			name = SourceFile;
-			sourceTree = "<group>";
-		};
-		D238550526C4CE67003B7999 /* V */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = V;
 			sourceTree = "<group>";
 		};
 		D238550626C4CE68003B7999 /* C */ = {
@@ -157,13 +172,6 @@
 				D238550C26C4CEF4003B7999 /* BaseNavigationController.swift */,
 			);
 			path = C;
-			sourceTree = "<group>";
-		};
-		D238550726C4CE68003B7999 /* M */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = M;
 			sourceTree = "<group>";
 		};
 		D238550E26C4E503003B7999 /* Find */ = {
@@ -230,13 +238,6 @@
 			path = V;
 			sourceTree = "<group>";
 		};
-		D238552026C4E9C9003B7999 /* Some */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Some;
-			sourceTree = "<group>";
-		};
 		D238552126C4E9C9003B7999 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,11 +257,59 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
-		D238552326C4E9C9003B7999 /* V */ = {
+		D28E65B726D8AEA90040C989 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D28E65C026D8AFA10040C989 /* C */,
+				D28E65BF26D8AF9C0040C989 /* V */,
+				D28E65BE26D8AF960040C989 /* M */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D28E65B826D8AED80040C989 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		D28E65B926D8AEDF0040C989 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				D28E65BC26D8AF870040C989 /* BaseUIView.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		D28E65BE26D8AF960040C989 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		D28E65BF26D8AF9C0040C989 /* V */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = V;
+			sourceTree = "<group>";
+		};
+		D28E65C026D8AFA10040C989 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				D28E65BA26D8AF140040C989 /* LoginViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		E0BE4A43DB7C520BD4F9FC79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B7AB67371DFDD03E26838E2 /* Pods_SwiftLaiDong.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +319,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D23854FD26C4CBC7003B7999 /* Build configuration list for PBXNativeTarget "SwiftLaiDong" */;
 			buildPhases = (
+				4800A16CD23D9FD84D18B0BC /* [CP] Check Pods Manifest.lock */,
 				D23854E526C4CBC6003B7999 /* Sources */,
 				D23854E626C4CBC6003B7999 /* Frameworks */,
 				D23854E726C4CBC6003B7999 /* Resources */,
+				C9047DFC1BCD88D568E4F282 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,6 +345,7 @@
 				TargetAttributes = {
 					D23854E826C4CBC6003B7999 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -328,12 +380,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4800A16CD23D9FD84D18B0BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftLaiDong-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9047DFC1BCD88D568E4F282 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftLaiDong/Pods-SwiftLaiDong-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftLaiDong/Pods-SwiftLaiDong-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftLaiDong/Pods-SwiftLaiDong-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D23854E526C4CBC6003B7999 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D238552926C4ECDC003B7999 /* NSObjectExtension.swift in Sources */,
+				D28E65BD26D8AF870040C989 /* BaseUIView.swift in Sources */,
 				D238550926C4CE95003B7999 /* BaseViewController.swift in Sources */,
 				D23854F126C4CBC6003B7999 /* ViewController.swift in Sources */,
 				D238550D26C4CEF4003B7999 /* BaseNavigationController.swift in Sources */,
@@ -345,6 +440,7 @@
 				D238551926C4E57F003B7999 /* HomeViewController.swift in Sources */,
 				D238551D26C4E593003B7999 /* SomeViewController.swift in Sources */,
 				D238552726C4EC5E003B7999 /* UIBarButtonItemExtension.swift in Sources */,
+				D28E65BB26D8AF140040C989 /* LoginViewController.swift in Sources */,
 				D238552526C4EA40003B7999 /* UIColorExtension.swift in Sources */,
 				D23854EF26C4CBC6003B7999 /* SceneDelegate.swift in Sources */,
 				D238551F26C4E59B003B7999 /* MineViewController.swift in Sources */,
@@ -491,19 +587,23 @@
 		};
 		D23854FE26C4CBC7003B7999 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652B4545393E739194E0970A /* Pods-SwiftLaiDong.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RS8S42PTY6;
 				INFOPLIST_FILE = SwiftLaiDong/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cld.Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLaiDong/SwiftLaiDong-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -511,19 +611,22 @@
 		};
 		D23854FF26C4CBC7003B7999 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 601F6189CC214B2985A9E2F2 /* Pods-SwiftLaiDong.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RS8S42PTY6;
 				INFOPLIST_FILE = SwiftLaiDong/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cld.Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLaiDong/SwiftLaiDong-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

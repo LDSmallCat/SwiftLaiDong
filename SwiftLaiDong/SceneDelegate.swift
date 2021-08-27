@@ -9,17 +9,7 @@ import UIKit
 
 extension SceneDelegate{
     func root() -> UIViewController {
-        let hasToken = Bool.random()
-        if hasToken {
-            return BaseTabBarController()
-        }
         return BaseTabBarController()
-//        User.shared = User.readFromLocal()
-//        if User.shared.isLogin {
-//            return BaseTabBarController()
-//        }else{
-//            return LoginViewController()
-//        }
     }
 }
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
