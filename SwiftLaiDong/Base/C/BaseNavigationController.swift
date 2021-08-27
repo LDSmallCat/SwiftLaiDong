@@ -19,7 +19,7 @@ class BaseNavigationController: UINavigationController {
         if viewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
             if let vc = viewController as? BaseViewController {
-                vc.navigationItem.leftBarButtonItem = UIBarButtonItem(norImage: "nav_back_black", selImage: "nav_back_black", imageEdgeInsets: UIEdgeInsets(top: 0, left: 17, bottom: 0, right: 0), target: vc, action: #selector(vc.backButtonClick))
+                vc.navigationItem.leftBarButtonItem = UIBarButtonItem(norImage: "nav_back_black", selImage: "nav_back_black", imageEdgeInsets: UIEdgeInsets(top: 0, left: -5, bottom: 0, right: 0), target: vc, action: #selector(vc.backButtonClick))
             }
         }
         super.pushViewController(viewController, animated: animated)

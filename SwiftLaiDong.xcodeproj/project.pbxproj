@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,7 @@
 		D238552B26C4F116003B7999 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D238552A26C4F116003B7999 /* Global.swift */; };
 		D28E65BB26D8AF140040C989 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E65BA26D8AF140040C989 /* LoginViewController.swift */; };
 		D28E65BD26D8AF870040C989 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E65BC26D8AF870040C989 /* BaseUIView.swift */; };
+		D28E65C826D8D7BD0040C989 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E65C726D8D7BD0040C989 /* Layout.swift */; };
 		D2BEFFB326C525DB00153D54 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BEFFB226C525DB00153D54 /* BoolExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		D28E65BA26D8AF140040C989 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D28E65BC26D8AF870040C989 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
 		D28E65C126D8B6990040C989 /* SwiftLaiDong-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftLaiDong-Bridging-Header.h"; sourceTree = "<group>"; };
+		D28E65C726D8D7BD0040C989 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		D2BEFFB226C525DB00153D54 /* BoolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +79,6 @@
 				652B4545393E739194E0970A /* Pods-SwiftLaiDong.debug.xcconfig */,
 				601F6189CC214B2985A9E2F2 /* Pods-SwiftLaiDong.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				D23854F526C4CBC7003B7999 /* Assets.xcassets */,
+				D28E65C726D8D7BD0040C989 /* Layout.swift */,
 				D28E65B726D8AEA90040C989 /* Login */,
 				D238550026C4CCE1003B7999 /* Home */,
 				D238550E26C4E503003B7999 /* Find */,
@@ -432,6 +434,7 @@
 				D238550926C4CE95003B7999 /* BaseViewController.swift in Sources */,
 				D23854F126C4CBC6003B7999 /* ViewController.swift in Sources */,
 				D238550D26C4CEF4003B7999 /* BaseNavigationController.swift in Sources */,
+				D28E65C826D8D7BD0040C989 /* Layout.swift in Sources */,
 				D238551B26C4E58B003B7999 /* FindViewController.swift in Sources */,
 				D238550B26C4CEC9003B7999 /* BaseTabBarController.swift in Sources */,
 				D2BEFFB326C525DB00153D54 /* BoolExtension.swift in Sources */,

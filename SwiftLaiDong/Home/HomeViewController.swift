@@ -12,13 +12,13 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
     }
     
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        let login = LoginViewController()
-        self.navigationController?.pushViewController(login, animated: true)
+        keyWindow.rootViewController = BaseNavigationController(rootViewController: LoginViewController())
         
     }
 

@@ -19,20 +19,31 @@ class LoginViewController: BaseViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = UIColor.blue
         
     }
     
-
+    override func viewDidAppear(_ animated: Bool) {
+        
+        print(UIScreen.main.bounds)
+        print(view.bounds)
+        //44
+        print(keyWindow.windowScene!.statusBarManager!.statusBarFrame.size)
+        print(logo.frame)
+        print(self.view.safeAreaLayoutGuide.layoutFrame)
+        
+        
+    }
     override func configUI() {
         view.addSubview(logo)
     }
     override func configLayout() {
-        let width = logo.backgroundImage(for: .normal)!.size.width
-        let height = logo.backgroundImage(for: .normal)!.size.height
-        
-        let x = UIScreen.main.bounds.width / 2 - width / 2
-        logo.frame = CGRect(x: x, y: 100, width: width, height: height)
+        logo.snp.makeConstraints {
+            $0.width.height.equalTo(67.5)
+            $0.centerX.equalToSuperview()
+//            $0.bottom.equalTo(self.view.safeAreaLayoutGuide).offset(0)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide)
+        }
     }
 
 }

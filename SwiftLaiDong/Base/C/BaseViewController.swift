@@ -34,6 +34,11 @@ extension BaseViewController {
 extension BaseViewController {
     
     @objc func backButtonClick() {
-        self.navigationController?.popViewController(animated: true)
+        if self.isModalInPresentation {
+            self.dismiss(animated: true, completion: nil)
+        }else{
+            self.navigationController?.popViewController(animated: true)
+        }
+        
     }
 }
