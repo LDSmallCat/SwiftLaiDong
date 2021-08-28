@@ -9,7 +9,7 @@ import UIKit
 
 extension SceneDelegate{
     func root() -> UIViewController {
-        return BaseTabBarController()
+        return BaseNavigationController(rootViewController: LoginViewController())
     }
 }
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

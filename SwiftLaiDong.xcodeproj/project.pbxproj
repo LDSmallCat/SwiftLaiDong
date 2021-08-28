@@ -25,6 +25,8 @@
 		D238552726C4EC5E003B7999 /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D238552626C4EC5E003B7999 /* UIBarButtonItemExtension.swift */; };
 		D238552926C4ECDC003B7999 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D238552826C4ECDC003B7999 /* NSObjectExtension.swift */; };
 		D238552B26C4F116003B7999 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D238552A26C4F116003B7999 /* Global.swift */; };
+		D249666D26D9C348009DF054 /* PhoneLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D249666C26D9C348009DF054 /* PhoneLoginViewController.swift */; };
+		D249667426D9CBF6009DF054 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D249667326D9CBF6009DF054 /* UINavigationControllerExtension.swift */; };
 		D28E65BB26D8AF140040C989 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E65BA26D8AF140040C989 /* LoginViewController.swift */; };
 		D28E65BD26D8AF870040C989 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E65BC26D8AF870040C989 /* BaseUIView.swift */; };
 		D28E65C826D8D7BD0040C989 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28E65C726D8D7BD0040C989 /* Layout.swift */; };
@@ -54,6 +56,8 @@
 		D238552626C4EC5E003B7999 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		D238552826C4ECDC003B7999 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		D238552A26C4F116003B7999 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		D249666C26D9C348009DF054 /* PhoneLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLoginViewController.swift; sourceTree = "<group>"; };
+		D249667326D9CBF6009DF054 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		D28E65BA26D8AF140040C989 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D28E65BC26D8AF870040C989 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
 		D28E65C126D8B6990040C989 /* SwiftLaiDong-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftLaiDong-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -169,9 +173,9 @@
 		D238550626C4CE68003B7999 /* C */ = {
 			isa = PBXGroup;
 			children = (
-				D238550826C4CE95003B7999 /* BaseViewController.swift */,
-				D238550A26C4CEC9003B7999 /* BaseTabBarController.swift */,
-				D238550C26C4CEF4003B7999 /* BaseNavigationController.swift */,
+				D249667026D9C706009DF054 /* TabBarController */,
+				D249666F26D9C6E8009DF054 /* UIViewController */,
+				D249666E26D9C6D5009DF054 /* NavigationController */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -247,6 +251,7 @@
 				D238552626C4EC5E003B7999 /* UIBarButtonItemExtension.swift */,
 				D238552826C4ECDC003B7999 /* NSObjectExtension.swift */,
 				D2BEFFB226C525DB00153D54 /* BoolExtension.swift */,
+				D249667326D9CBF6009DF054 /* UINavigationControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -257,6 +262,30 @@
 				D238552A26C4F116003B7999 /* Global.swift */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		D249666E26D9C6D5009DF054 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				D238550C26C4CEF4003B7999 /* BaseNavigationController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		D249666F26D9C6E8009DF054 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D238550826C4CE95003B7999 /* BaseViewController.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		D249667026D9C706009DF054 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				D238550A26C4CEC9003B7999 /* BaseTabBarController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 		D28E65B726D8AEA90040C989 /* Login */ = {
@@ -302,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				D28E65BA26D8AF140040C989 /* LoginViewController.swift */,
+				D249666C26D9C348009DF054 /* PhoneLoginViewController.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -436,9 +466,11 @@
 				D238550D26C4CEF4003B7999 /* BaseNavigationController.swift in Sources */,
 				D28E65C826D8D7BD0040C989 /* Layout.swift in Sources */,
 				D238551B26C4E58B003B7999 /* FindViewController.swift in Sources */,
+				D249666D26D9C348009DF054 /* PhoneLoginViewController.swift in Sources */,
 				D238550B26C4CEC9003B7999 /* BaseTabBarController.swift in Sources */,
 				D2BEFFB326C525DB00153D54 /* BoolExtension.swift in Sources */,
 				D238552B26C4F116003B7999 /* Global.swift in Sources */,
+				D249667426D9CBF6009DF054 /* UINavigationControllerExtension.swift in Sources */,
 				D23854ED26C4CBC6003B7999 /* AppDelegate.swift in Sources */,
 				D238551926C4E57F003B7999 /* HomeViewController.swift in Sources */,
 				D238551D26C4E593003B7999 /* SomeViewController.swift in Sources */,

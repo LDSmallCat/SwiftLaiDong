@@ -12,6 +12,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
+        configBackButton()
         configUI()
         configLayout()
     }
@@ -29,6 +30,7 @@ extension BaseViewController {
 extension BaseViewController {
     @objc func configUI() { }
     @objc func configLayout() { }
+    @objc func configBackButton() { }
 }
 //MARK: 左上角 返回按钮点击事件
 extension BaseViewController {

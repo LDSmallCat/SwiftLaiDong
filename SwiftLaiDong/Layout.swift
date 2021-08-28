@@ -13,7 +13,7 @@ var isIphoneX: Bool { keyWindow.safeAreaInsets.bottom > 0 }
 
 var statusBarHeight:CGFloat{keyWindow.windowScene?.statusBarManager?.statusBarFrame.height ?? 0}
 
-var navBarHeight: CGFloat { return 44 }
+var naviBarHeight: CGFloat { return 44 }
 
 var tabBarHeight: CGFloat { isIphoneX ? 49 + 34 : 49 }
 
